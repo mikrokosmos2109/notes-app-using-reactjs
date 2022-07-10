@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+body {
+	margin: 0;
+	font-family: 'Work Sans', sans-serif;
+	background-color: black;
+}
+
+h1{
+	color: white;
+	font-family: 'Work Sans', sans-serif;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-family: 'Work Sans', sans-serif;
+}
+.footer-content{
+	color:white;
+	align-items: center;
+	margin-top: 50px;
+	margin-left: 400px;
+}
+.container {
+	max-width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	min-height: 100vh;
+}
+
+.notes-list {
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(
+		auto-fill,
+		minmax(250px, 1fr)
+	);
+}
+
+.note.new {
+	background-color: #92B4EC;
+	font-family: 'Work Sans', sans-serif;
+   color:black;
+}
+
+textarea {
+	border: none;
+	resize: none;
+	background-color: #92B4EC;
+	font-family: 'Work Sans', sans-serif;;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+.save {
+	border: none;
+	border-radius: 15px;
+	padding: 5px 10px 5px 10px;
+}
+
+.save:hover {
+	
+	cursor: pointer;
+}
+
+.note {
+	background-color: #FFA1A1;
+	border-radius: 10px;
+	padding: 1rem;
+	min-height: 170px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	white-space: pre-wrap;
+	resize: both;
+}
+.note:hover{
+	transform: scale(1.08);
+	transition: all 0.5s ease;
+}
+h1:hover{
+		transform: scale(1.08);
+		transition: all 0.5s ease;
+}
+.note-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.delete-icon {
+	cursor: pointer;
+}
+
+.search {
+	display: flex;
+	align-items: center;
+	background-color: rgb(233, 233, 233);
+	border-radius: 10px;
+	padding: 5px;
+	margin-bottom: 1.5em;
+}
+
+.search input {
+	border: none;
+	background-color: rgb(233, 233, 233);
+	width: 100%;
+}
+
+.search input:focus {
+	outline: none;
+}
